@@ -16,5 +16,10 @@ namespace ICT526_A2_Grp1
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
