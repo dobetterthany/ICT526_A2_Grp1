@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace ICT526_A2_Grp1
 {
-    public partial class Form1 : Form
+    public partial class Sales : Form
     {
-        public Form1()
+        public Sales()
         {
             InitializeComponent();
+        }
+
+        private void Sales_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
