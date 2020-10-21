@@ -1,6 +1,6 @@
 ﻿namespace ICT526_A2_Grp1
 {
-    partial class Sales
+    partial class AdminCheckOut
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.codeNa = new System.Windows.Forms.TextBox();
-            this.Add_btn_Na = new System.Windows.Forms.Button();
-            this.quantityNa = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.listViewNa = new System.Windows.Forms.ListView();
             this.Product_CodeNa = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -48,65 +42,15 @@
             this.label6 = new System.Windows.Forms.Label();
             this.subtotalNa = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.codeNa = new System.Windows.Forms.TextBox();
+            this.Add_btn_Na = new System.Windows.Forms.Button();
+            this.quantityNa = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.codeNa);
-            this.groupBox1.Controls.Add(this.Add_btn_Na);
-            this.groupBox1.Controls.Add(this.quantityNa);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(13, 13);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(884, 88);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Inventory";
-            // 
-            // codeNa
-            // 
-            this.codeNa.Location = new System.Drawing.Point(104, 42);
-            this.codeNa.Name = "codeNa";
-            this.codeNa.Size = new System.Drawing.Size(128, 26);
-            this.codeNa.TabIndex = 5;
-            // 
-            // Add_btn_Na
-            // 
-            this.Add_btn_Na.Location = new System.Drawing.Point(591, 26);
-            this.Add_btn_Na.Name = "Add_btn_Na";
-            this.Add_btn_Na.Size = new System.Drawing.Size(127, 42);
-            this.Add_btn_Na.TabIndex = 4;
-            this.Add_btn_Na.Text = "Add";
-            this.Add_btn_Na.UseVisualStyleBackColor = true;
-            this.Add_btn_Na.Click += new System.EventHandler(this.Add_btn_Na_Click);
-            // 
-            // quantityNa
-            // 
-            this.quantityNa.Location = new System.Drawing.Point(375, 42);
-            this.quantityNa.Name = "quantityNa";
-            this.quantityNa.Size = new System.Drawing.Size(100, 26);
-            this.quantityNa.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(270, 45);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 20);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Quantity :";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 45);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Code :";
             // 
             // groupBox2
             // 
@@ -118,10 +62,10 @@
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.subtotalNa);
             this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Location = new System.Drawing.Point(13, 107);
+            this.groupBox2.Location = new System.Drawing.Point(8, 127);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(884, 364);
-            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Item List";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
@@ -138,14 +82,13 @@
             this.listViewNa.HideSelection = false;
             this.listViewNa.Location = new System.Drawing.Point(7, 26);
             this.listViewNa.Name = "listViewNa";
-            this.listViewNa.Size = new System.Drawing.Size(600, 332);
+            this.listViewNa.Size = new System.Drawing.Size(687, 303);
             this.listViewNa.TabIndex = 16;
             this.listViewNa.UseCompatibleStateImageBehavior = false;
             this.listViewNa.View = System.Windows.Forms.View.Details;
             // 
             // Product_CodeNa
             // 
-            this.Product_CodeNa.Tag = "1";
             this.Product_CodeNa.Text = "Code";
             this.Product_CodeNa.Width = 93;
             // 
@@ -233,33 +176,90 @@
             this.label3.TabIndex = 9;
             this.label3.Text = "Subtotal :";
             // 
-            // Sales
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.codeNa);
+            this.groupBox1.Controls.Add(this.Add_btn_Na);
+            this.groupBox1.Controls.Add(this.quantityNa);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Location = new System.Drawing.Point(8, 33);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(884, 88);
+            this.groupBox1.TabIndex = 2;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Inventory";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // codeNa
+            // 
+            this.codeNa.Location = new System.Drawing.Point(104, 42);
+            this.codeNa.Name = "codeNa";
+            this.codeNa.Size = new System.Drawing.Size(128, 26);
+            this.codeNa.TabIndex = 5;
+            // 
+            // Add_btn_Na
+            // 
+            this.Add_btn_Na.Location = new System.Drawing.Point(591, 26);
+            this.Add_btn_Na.Name = "Add_btn_Na";
+            this.Add_btn_Na.Size = new System.Drawing.Size(127, 42);
+            this.Add_btn_Na.TabIndex = 4;
+            this.Add_btn_Na.Text = "Add";
+            this.Add_btn_Na.UseVisualStyleBackColor = true;
+            this.Add_btn_Na.Click += new System.EventHandler(this.Add_btn_Na_Click);
+            // 
+            // quantityNa
+            // 
+            this.quantityNa.Location = new System.Drawing.Point(375, 42);
+            this.quantityNa.Name = "quantityNa";
+            this.quantityNa.Size = new System.Drawing.Size(100, 26);
+            this.quantityNa.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(270, 45);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(76, 20);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Quantity :";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(20, 45);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(55, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Code :";
+            // 
+            // AdminCheckOut
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(938, 483);
+            this.ClientSize = new System.Drawing.Size(900, 524);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Sales";
-            this.Text = "Sales";
-            this.Load += new System.EventHandler(this.Sales_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.Name = "AdminCheckOut";
+            this.Text = "AdminCheckOut";
+            this.Load += new System.EventHandler(this.AdminCheckOut_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button Add_btn_Na;
-        private System.Windows.Forms.TextBox quantityNa;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.ListView listViewNa;
+        private System.Windows.Forms.ColumnHeader Product_CodeNa;
+        private System.Windows.Forms.ColumnHeader ProductNa;
+        private System.Windows.Forms.ColumnHeader Quantity_Na;
+        private System.Windows.Forms.ColumnHeader PriceNa;
+        private System.Windows.Forms.ColumnHeader DiscountNa;
         private System.Windows.Forms.Button Confirm_btn_Na;
         private System.Windows.Forms.Label TotalNa;
         private System.Windows.Forms.Label label8;
@@ -267,11 +267,11 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label subtotalNa;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox codeNa;
-        private System.Windows.Forms.ColumnHeader Product_CodeNa;
-        private System.Windows.Forms.ColumnHeader ProductNa;
-        private System.Windows.Forms.ColumnHeader Quantity_Na;
-        private System.Windows.Forms.ColumnHeader PriceNa;
-        private System.Windows.Forms.ColumnHeader DiscountNa;
+        private System.Windows.Forms.Button Add_btn_Na;
+        private System.Windows.Forms.TextBox quantityNa;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.userName_Na = new System.Windows.Forms.TextBox();
+            this.btn_login_Na = new System.Windows.Forms.Button();
             this.password_Na = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.btn_login_Na = new System.Windows.Forms.Button();
+            this.userName_Na = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,40 +50,7 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Login Form";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(208, 92);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "User Name :";
-            // 
-            // userName_Na
-            // 
-            this.userName_Na.Location = new System.Drawing.Point(382, 70);
-            this.userName_Na.Multiline = true;
-            this.userName_Na.Name = "userName_Na";
-            this.userName_Na.Size = new System.Drawing.Size(197, 42);
-            this.userName_Na.TabIndex = 1;
-            // 
-            // password_Na
-            // 
-            this.password_Na.Location = new System.Drawing.Point(382, 190);
-            this.password_Na.Multiline = true;
-            this.password_Na.Name = "password_Na";
-            this.password_Na.Size = new System.Drawing.Size(197, 47);
-            this.password_Na.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(219, 217);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 20);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Password :";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // btn_login_Na
             // 
@@ -95,13 +62,45 @@
             this.btn_login_Na.UseVisualStyleBackColor = true;
             this.btn_login_Na.Click += new System.EventHandler(this.btn_login_Na_Click);
             // 
-            // Form1
+            // password_Na
+            // 
+            this.password_Na.Location = new System.Drawing.Point(354, 214);
+            this.password_Na.Name = "password_Na";
+            this.password_Na.Size = new System.Drawing.Size(197, 26);
+            this.password_Na.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(219, 217);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(86, 20);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Password :";
+            // 
+            // userName_Na
+            // 
+            this.userName_Na.Location = new System.Drawing.Point(354, 86);
+            this.userName_Na.Name = "userName_Na";
+            this.userName_Na.Size = new System.Drawing.Size(197, 26);
+            this.userName_Na.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(208, 92);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(97, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "User Name :";
+            // 
+            // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Form1";
+            this.Name = "Login";
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
